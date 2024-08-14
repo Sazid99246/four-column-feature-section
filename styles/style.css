@@ -12,11 +12,18 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-size: 0.9375rem;
-    margin: 4rem 3rem 3rem 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
     background-color: var(--bg-primary);
 }
 
@@ -26,9 +33,10 @@ h1 span {
 }
 
 h1 {
+    margin: 0 auto;
+    max-width: 22.8125rem;
     font-weight: 600;
     color: var(--heading-color);
-    text-align: center;
 }
 
 p {
@@ -63,11 +71,16 @@ header p {
 }
 
 .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 12px 0 20px 30px;
     max-width: 20rem;
     border-radius: 5px;
+    position: relative; /* Optional: Helps to align images inside with position absolute */
 }
+
 
 .feature-description {
     margin: 0;
@@ -75,9 +88,15 @@ header p {
 }
 
 .feature img {
-    float: right;
-    margin-right: 30px;
+    align-self: flex-end;
+    margin: 0 30px 0 0;
+    width: 50px; /* Adjust as per your image size */
+    height: auto;
+    position: absolute; /* Optional: For more precise control, if desired */
+    bottom: 20px; /* Adjust this as needed */
+    right: 30px; /* Adjust this as needed */
 }
+
 
 .team {
     border-top: 5px solid var(--team-border);
