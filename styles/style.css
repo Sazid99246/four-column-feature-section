@@ -16,8 +16,8 @@
 
 body {
     font-size: 0.9375rem;
-    margin: 3rem 3rem;
-
+    margin: 4rem 3rem 3rem 3rem;
+    background-color: var(--bg-primary);
 }
 
 /* header section styles */
