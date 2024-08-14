@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --team-border: hsl(0, 78%, 62%);
+    --supervisor-border: hsl(180, 62%, 55%);
+    --karma-border: hsl(34, 97%, 64%);
+    --calculator-border: hsl(212, 86%, 64%);
+    --paragraph-color: hsl(229, 6%, 66%);
+    --bg-primary: hsl(0, 0%, 98%);
+    --heading-color: hsl(234, 12%, 34%);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 0.9375rem;
+    margin: 3rem 3rem;
+
+}
+
+/* header section styles */
+h1 span {
+    font-weight: 200;
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--heading-color);
+    text-align: center;
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+header p {
+    text-align: center;
+}
+
+/* main styles */
+.feature-heading {
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 0;
+    color: var(--heading-color);
+}
+
+.features {
+    margin-top: 3rem;
+}
+
+.features, .features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.features-container {
+    flex-direction: column;
+}
+
+.feature {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 12px 0 20px 30px;
+    max-width: 20rem;
+    border-radius: 5px;
+}
+
+.feature-description {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.feature img {
+    float: right;
+    margin-right: 30px;
+}
+
+.team {
+    border-top: 5px solid var(--team-border);
+}
+
+.supervisor {
+    border-top: 5px solid var(--supervisor-border);
+}
+
+.karma {
+    border-top: 5px solid var(--karma-border);
+}
+
+.calculator {
+    border-top: 5px solid var(--calculator-border);
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    .features {
+        flex-direction: column;
+    }
+}
