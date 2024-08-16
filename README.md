@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source Code](https://github.com/Sazid99246/frontend-mentor-four-column-feature-section)
-- Live Site URL: [Four card Feature Section](https://sazid99246.github.io/frontend-mentor-four-column-feature-section/)
+- Solution URL: [Source Code](https://github.com/Sazid99246/four-column-feature-section)
+- Live Site URL: [Four card Feature Section](https://sazid99246.github.io/four-column-feature-section/)
 
 ## My process
 
